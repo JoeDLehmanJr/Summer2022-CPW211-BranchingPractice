@@ -57,6 +57,7 @@
             this.Controls.Add(this.BtnDisplayGreeting);
             this.Controls.Add(this.TxtName);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Branching Practice";
             this.ResumeLayout(false);
             this.PerformLayout();
