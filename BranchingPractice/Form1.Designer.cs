@@ -28,19 +28,44 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.TxtName = new System.Windows.Forms.TextBox();
+            this.BtnDisplayGreeting = new System.Windows.Forms.Button();
             this.SuspendLayout();
+            // 
+            // TxtName
+            // 
+            this.TxtName.Location = new System.Drawing.Point(55, 28);
+            this.TxtName.Name = "TxtName";
+            this.TxtName.Size = new System.Drawing.Size(100, 23);
+            this.TxtName.TabIndex = 0;
+            // 
+            // BtnDisplayGreeting
+            // 
+            this.BtnDisplayGreeting.Location = new System.Drawing.Point(51, 66);
+            this.BtnDisplayGreeting.Name = "BtnDisplayGreeting";
+            this.BtnDisplayGreeting.Size = new System.Drawing.Size(104, 23);
+            this.BtnDisplayGreeting.TabIndex = 1;
+            this.BtnDisplayGreeting.Text = "Display Greeting";
+            this.BtnDisplayGreeting.UseVisualStyleBackColor = true;
+            this.BtnDisplayGreeting.Click += new System.EventHandler(this.BtnDisplayGreeting_Click);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(197, 112);
+            this.Controls.Add(this.BtnDisplayGreeting);
+            this.Controls.Add(this.TxtName);
             this.Name = "Form1";
             this.Text = "Branching Practice";
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
+
+        private TextBox TxtName;
+        private Button BtnDisplayGreeting;
     }
 }
